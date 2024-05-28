@@ -1,5 +1,5 @@
 # Source private variables
-source "~/.zshrc_private"
+source ~/.zshrc_private
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
