@@ -61,3 +61,8 @@ zstyle ':completion*' list-colors '${(s.:.)LS_COLORS}'
 alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -la --color'
+
+# TMUX autostart
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" == *screen* ]] && [[ ! "$TERM" == *tmux* ]] && [ -z "$TMUX" ]; then
+    tmux attach-session -t default || tmux new-session -s default
+fi
