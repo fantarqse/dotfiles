@@ -39,6 +39,7 @@ autoload -U compinit && compinit
 # bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^F' forward-char
 
 # History
 HISTSIZE=5000
